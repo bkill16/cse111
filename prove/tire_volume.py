@@ -13,4 +13,4 @@ print(f"\nThe approximate volume is {volume:.2f} liters\n")
 current_date = datetime.date(datetime.today())
 
 with open("volumes.txt", mode="at") as file:
-    print(current_date, round(width), round(aspect_ratio), round(diameter), round(volume, 2), sep=" ", end="\n", file=file, flush=False)
+    print(current_date, round(width), round(aspect_ratio), round(diameter), round(volume, 2), sep=", ", end="\n", file=file, flush=False)
