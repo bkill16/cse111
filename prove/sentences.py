@@ -129,7 +129,7 @@ def main():
             quantity: an integer that determines if the
                 determiner and noun in the prepositional
                 phrase returned from this function should
-                be single or pluaral.
+                be single or plural.
         Return: a prepositional phrase.
         """
         preposition = get_preposition()
