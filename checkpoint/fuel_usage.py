@@ -35,6 +35,7 @@ def miles_per_gallon(start_miles, end_miles, amount_gallons):
     fuel_efficiency_mpg = (end_miles - start_miles) / amount_gallons
     return fuel_efficiency_mpg
 
+
 def lp100k_from_mpg(mpg):
     """Convert miles per gallon to liters per 100
     kilometers and return the converted value.
@@ -44,6 +45,7 @@ def lp100k_from_mpg(mpg):
     """
     converted_mpg = 235.215 / mpg
     return converted_mpg
+
 
 # Call the main function so that
 # this program will start executing.

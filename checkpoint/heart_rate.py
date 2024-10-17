@@ -16,4 +16,6 @@ low_rate = max_rate * 0.65
 high_rate = max_rate * 0.85
 
 print("When you exercise to strengthen your heart, you should")
-print(f"keep your heart rate between {low_rate:.0f} and {high_rate:.0f} beats per minute.\n")
+print(
+    f"keep your heart rate between {low_rate:.0f} and {high_rate:.0f} beats per minute.\n"
+)

@@ -27,6 +27,7 @@ def test_prefix():
     assert prefix("upbeat", "upgrade") == "up"
     assert prefix("Disable", "dIstasteful") == "dis"
 
+
 def test_suffix():
     """Verify that the suffix function works correctly.
     Parameters: none
@@ -48,6 +49,7 @@ def test_suffix():
     assert suffix("happy", "funny") == "y"
     assert suffix("tired", "fatigued") == "ed"
     assert suffix("swimming", "FLYING") == "ing"
+
 
 # Call the main function that is part of pytest so that the
 # computer will execute the test functions in this file.

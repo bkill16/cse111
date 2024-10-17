@@ -1,15 +1,16 @@
 import math
 
+
 def main():
 
     def compute_volume(radius, height):
-        volume = (math.pi * radius ** 2) * height
+        volume = (math.pi * radius**2) * height
         return volume
-    
+
     def compute_surface_area(radius, height):
         surface_area = (2 * math.pi * radius) * (radius + height)
         return surface_area
-    
+
     name = "#1 Picnic"
     radius = 6.83
     height = 10.16
@@ -105,5 +106,6 @@ def main():
     surface_area = compute_surface_area(radius, height)
     storage_efficiency = volume / surface_area
     print(f"{name} {storage_efficiency:.2f}\n")
+
 
 main()

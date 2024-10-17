@@ -1,5 +1,6 @@
 import random
 
+
 def main():
 
     def get_determiner(quantity):
@@ -43,15 +44,35 @@ def main():
         Return: a randomly chosen noun.
         """
         if quantity == 1:
-            words = ["bird", "boy", "car", "cat", "child", "dog", "girl", "man",
-                    "rabbit", "woman"]
+            words = [
+                "bird",
+                "boy",
+                "car",
+                "cat",
+                "child",
+                "dog",
+                "girl",
+                "man",
+                "rabbit",
+                "woman",
+            ]
         else:
-            words = ["birds", "boys", "cars", "cats", "children", "dogs", "girls",
-                    "men", "rabbits", "women"]
+            words = [
+                "birds",
+                "boys",
+                "cars",
+                "cats",
+                "children",
+                "dogs",
+                "girls",
+                "men",
+                "rabbits",
+                "women",
+            ]
 
         word = random.choice(words)
         return word
-    
+
     def get_verb(quantity, tense):
         """Return a randomly chosen verb. If tense is "past",
         this function will return one of these ten verbs:
@@ -79,25 +100,64 @@ def main():
         Return: a randomly chosen verb.
         """
         if tense == "past":
-            words = ["drank", "ate", "grew", "laughed", "thought", "ran",
-                    "slept", "talked", "walked", "wrote"]
-        
+            words = [
+                "drank",
+                "ate",
+                "grew",
+                "laughed",
+                "thought",
+                "ran",
+                "slept",
+                "talked",
+                "walked",
+                "wrote",
+            ]
+
         elif tense == "present" and quantity == 1:
-            words = ["drinks", "eats", "grows", "laughs", "thinks", "runs", 
-                    "sleeps", "talks", "walks", "writes"]
-            
+            words = [
+                "drinks",
+                "eats",
+                "grows",
+                "laughs",
+                "thinks",
+                "runs",
+                "sleeps",
+                "talks",
+                "walks",
+                "writes",
+            ]
+
         elif tense == "present" and quantity != 1:
-            words = ["drink", "eat", "grow", "laugh", "think", "run",
-                    "sleep", "talk", "walk", "write"]
-            
+            words = [
+                "drink",
+                "eat",
+                "grow",
+                "laugh",
+                "think",
+                "run",
+                "sleep",
+                "talk",
+                "walk",
+                "write",
+            ]
+
         else:
-            words = ["will drink", "will eat", "will grow", "will laugh",
-            "will think", "will run", "will sleep", "will talk",
-            "will walk", "will write"]
+            words = [
+                "will drink",
+                "will eat",
+                "will grow",
+                "will laugh",
+                "will think",
+                "will run",
+                "will sleep",
+                "will talk",
+                "will walk",
+                "will write",
+            ]
 
         word = random.choice(words)
         return word
-    
+
     def get_preposition():
         """Return a randomly chosen preposition
         from this list of prepositions:
@@ -110,11 +170,38 @@ def main():
 
         Return: a randomly chosen preposition.
         """
-        words = ["about", "above", "across", "after", "along",
-        "around", "at", "before", "behind", "below", "beyond", "by", 
-        "despite", "except", "for", "from", "in", "into", "near", 
-        "of", "off", "on", "onto", "out", "over", "past", "to", 
-        "under", "with", "without"]
+        words = [
+            "about",
+            "above",
+            "across",
+            "after",
+            "along",
+            "around",
+            "at",
+            "before",
+            "behind",
+            "below",
+            "beyond",
+            "by",
+            "despite",
+            "except",
+            "for",
+            "from",
+            "in",
+            "into",
+            "near",
+            "of",
+            "off",
+            "on",
+            "onto",
+            "out",
+            "over",
+            "past",
+            "to",
+            "under",
+            "with",
+            "without",
+        ]
 
         word = random.choice(words)
         return word
@@ -138,7 +225,7 @@ def main():
 
         prepositional_phrase = preposition + " " + determiner + " " + noun
         return prepositional_phrase
-        
+
     def make_sentence(quantity, tense):
         """Build and return a sentence with three words:
         a determiner, a noun, and a verb. The grammatical
@@ -170,5 +257,6 @@ def main():
     print(sentence5)
     print(sentence6)
     print()
+
 
 main()

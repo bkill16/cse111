@@ -43,9 +43,9 @@ def compute_age(birth_str):
     years = today.year - birthdate.year
 
     # If necessary, subtract one from the difference.
-    if birthdate.month > today.month or \
-        (birthdate.month == today.month and \
-            birthdate.day > today.day):
+    if birthdate.month > today.month or (
+        birthdate.month == today.month and birthdate.day > today.day
+    ):
         years -= 1
 
     return years
@@ -76,7 +76,7 @@ def body_mass_index(weight, height):
         height: a person's height in centimeters.
     Return: a person's body mass index.
     """
-    bmi = (10000 * weight) / height ** 2
+    bmi = (10000 * weight) / height**2
     return bmi
 
 
@@ -88,7 +88,7 @@ def basal_metabolic_rate(gender, weight, height, age):
         age: a person's age in years.
     Return: a person's basal metabolic rate in kcals per day.
     """
-    if gender.lower() == 'f':
+    if gender.lower() == "f":
         bmr = 447.593 + 9.247 * weight + 3.098 * height - 4.330 * age
     else:
         bmr = 88.362 + 13.397 * weight + 4.799 * height - 5.677 * age

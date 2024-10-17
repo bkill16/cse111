@@ -53,10 +53,16 @@ def main():
 
     score = 0
 
-    score += ask_positive_question("1. I feel that I am a person of worth, at least on an equal plane with others.")
+    score += ask_positive_question(
+        "1. I feel that I am a person of worth, at least on an equal plane with others."
+    )
     score += ask_positive_question("2. I feel that I have a number of good qualities.")
-    score += ask_negative_question("3. All in all, I am inclined to feel that I am a failure.")
-    score += ask_positive_question("4. I am able to do things as well as most other people.")
+    score += ask_negative_question(
+        "3. All in all, I am inclined to feel that I am a failure."
+    )
+    score += ask_positive_question(
+        "4. I am able to do things as well as most other people."
+    )
     score += ask_negative_question("5. I feel I do not have much to be proud of.")
     score += ask_positive_question("6. I take a positive attitude toward myself.")
     score += ask_positive_question("7. On the whole, I am satisfied with myself.")
@@ -66,6 +72,7 @@ def main():
 
     print(f"\nYour score is {score}.")
     print("A score below 15 may indicate problematic low self-esteem.\n")
+
 
 if __name__ == "__main__":
     main()

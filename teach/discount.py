@@ -9,7 +9,7 @@ subtotal = float(input("\nPlease enter the subtotal: "))
 if subtotal >= 50 and (day_of_week == 1 or day_of_week == 2):
     discount = subtotal * 0.10
     print(f"Discount Amount: ${discount:.2f}")
-    
+
     new_subtotal = subtotal - discount
     sales_tax = new_subtotal * 0.06
     total = new_subtotal + sales_tax
